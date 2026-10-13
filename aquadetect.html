@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#171519" />
+    <title>AquaDetect | Vincent Sanchez</title>
+    <meta
+      name="description"
+      content="Explore the real AquaDetect interface: oil-spill detection, boat telemetry, mapping, and monitoring from Vincent Sanchez’s team thesis."
+    />
+    <link
+      rel="canonical"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/aquadetect.html"
+    />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
+    ></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./assets/project-gallery.js"></script>
+  </head>
+  <body id="top" class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a
+        class="wordmark"
+        href="./index.html"
+        aria-label="Vincent Sanchez, portfolio home"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        hidden
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="./index.html#work">All projects <span>↖</span></a
+        ><a href="./index.html#about">My story</a
+        ><a class="nav-contact" href="./index.html#contact"
+          >Let's connect <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link mono" href="./index.html#work"
+          >← BACK TO SELECTED WORK</a
+        >
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">02 / THE SOFTWARE · TEAM THESIS</p>
+            <h1>AQUADETECT<span class="pink-text">.</span></h1>
+          </div>
+          <p>Make the data visible.<br />Bring the system into view.</p>
+        </div>
+        <div class="case-tags mono">
+          <span>COMPUTER VISION</span><span>MONITORING</span
+          ><span>WEB DEVELOPMENT</span>
+        </div>
+        <div class="dashboard-gallery" id="dashboard-gallery">
+          <div class="gallery-topline mono">
+            <span>INTERFACE WALKTHROUGH</span
+            ><span>ACTUAL PROJECT SCREENSHOTS</span>
+          </div>
+          <figure class="gallery-main">
+            <a
+              class="gallery-image-link"
+              href="./assets/images/projects/dashboard.webp"
+              data-lightbox="aquadetect"
+              data-title="Dashboard overview"
+              data-caption="Battery, oil-sensor, pump, location, and navigation information in one overview."
+              aria-label="Enlarge the selected AquaDetect screenshot"
+              ><img
+                id="gallery-image"
+                src="./assets/images/projects/dashboard.webp"
+                width="1910"
+                height="946"
+                fetchpriority="high"
+                alt="AquaDetect dashboard overview with status panels, location map, and navigation information."
+              /><span class="enlarge-label" aria-hidden="true"
+                >ENLARGE SCREENSHOT ↗</span
+              ></a
+            >
+            <figcaption class="gallery-caption">
+              <div aria-live="polite" aria-atomic="true">
+                <h2 id="gallery-title">Dashboard overview</h2>
+                <p id="gallery-description">
+                  Battery, oil-sensor, pump, location, and navigation
+                  information in one overview.
+                </p>
+              </div>
+              <span id="gallery-counter" class="mono">01 / 08</span>
+            </figcaption>
+          </figure>
+          <div
+            class="gallery-choices"
+            aria-label="Choose an AquaDetect screenshot"
+          >
+            <a
+              class="gallery-choice"
+              href="./assets/images/projects/dashboard.webp"
+              data-gallery-item
+              data-title="Dashboard overview"
+              data-caption="Battery, oil-sensor, pump, location, and navigation information in one overview."
+              data-preview="./assets/images/projects/dashboard.webp"
+              aria-current="true"
+              ><img
+                src="./assets/images/projects/dashboard-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">01</b>Dashboard overview</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/navigation.webp"
+              data-gallery-item
+              data-title="Map & navigation"
+              data-caption="A map-based view with the current position, target coordinates, and home-point controls."
+              data-preview="./assets/images/projects/navigation.webp"
+              ><img
+                src="./assets/images/projects/navigation-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">02</b>Map & navigation</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/detection-results.webp"
+              data-gallery-item
+              data-title="Detection results"
+              data-caption="A supplied test image alongside oil-spill bounding boxes and individual detection confidence scores."
+              data-preview="./assets/images/projects/detection-results.webp"
+              ><img
+                src="./assets/images/projects/detection-results-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">03</b>Detection results</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/manual-control.webp"
+              data-gallery-item
+              data-title="Manual control"
+              data-caption="Movement, motor speed, rudder angle, device mode, and pump controls in the interface."
+              data-preview="./assets/images/projects/manual-control.webp"
+              ><img
+                src="./assets/images/projects/manual-control-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">04</b>Manual control</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/batch-screening.webp"
+              data-gallery-item
+              data-title="Batch screening"
+              data-caption="The image-import screen for reviewing multiple images in an oil-detection workflow."
+              data-preview="./assets/images/projects/batch-screening.webp"
+              ><img
+                src="./assets/images/projects/batch-screening-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">05</b>Batch screening</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/oil-detection.webp"
+              data-gallery-item
+              data-title="Image analysis"
+              data-caption="Image upload and location metadata fields before running oil-spill detection."
+              data-preview="./assets/images/projects/oil-detection.webp"
+              ><img
+                src="./assets/images/projects/oil-detection-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">06</b>Image analysis</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/cleaning.webp"
+              data-gallery-item
+              data-title="Cleaning patterns"
+              data-caption="Cleaning-center coordinates, pattern parameters, status, and a map preview."
+              data-preview="./assets/images/projects/cleaning.webp"
+              ><img
+                src="./assets/images/projects/cleaning-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">07</b>Cleaning patterns</span></a
+            ><a
+              class="gallery-choice"
+              href="./assets/images/projects/logs.webp"
+              data-gallery-item
+              data-title="Activity logs"
+              data-caption="Command history and filtering controls for reviewing system activity."
+              data-preview="./assets/images/projects/logs.webp"
+              ><img
+                src="./assets/images/projects/logs-preview.webp"
+                alt=""
+                width="800"
+                height="400"
+                loading="lazy"
+                decoding="async"
+              /><span><b class="mono">08</b>Activity logs</span></a
+            >
+          </div>
+          <p class="gallery-note">
+            Screenshots from the thesis application. Displayed readings and
+            controls belong to those captures; this is a project walkthrough.
+          </p>
+        </div>
+      </section>
+      <section
+        class="case-context section-paper section-pad"
+        aria-labelledby="aqua-overview"
+      >
+        <div class="section-label mono">
+          <span>THE INTERFACE</span><span>FROM IMAGERY TO INFORMATION</span>
+        </div>
+        <div class="case-context-grid">
+          <h2 id="aqua-overview" data-reveal>
+            SEE THE DATA.<br />UNDERSTAND<br /><span class="rose-deep"
+              >THE SYSTEM.</span
+            >
+          </h2>
+          <div>
+            <p class="case-lead">
+              AquaDetect brings the software side of our thesis into one
+              monitoring interface.
+            </p>
+            <p>
+              Our team built the dashboard with React, FastAPI, and Leaflet to
+              visualize boat telemetry and oil-spill detection results. The
+              supplied screens show how status, location, analysis, and controls
+              are organized for the operator.
+            </p>
+            <p>
+              The computer vision work used YOLOv8, trained through six
+              iterations, reaching a reported <strong>73.48% mAP50</strong> in
+              the thesis evaluation.
+            </p>
+            <div class="tech-list">
+              <span>React</span><span>FastAPI</span><span>Leaflet</span
+              ><span>YOLOv8</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="case-features section-pad" aria-labelledby="aqua-details">
+        <div class="section-label mono">
+          <span>WHAT THE SCREENS SHOW</span
+          ><span>DETECTION / MONITORING / CONTROL</span>
+        </div>
+        <h2 class="visually-hidden" id="aqua-details">
+          AquaDetect project details
+        </h2>
+        <article>
+          <span class="mono">01</span>
+          <h3>DETECTION & REVIEW</h3>
+          <p>
+            Image upload, batch-screening, and detection-result views organize
+            the computer vision workflow. The example result shows bounding
+            boxes and individual prediction confidence scores.
+          </p>
+        </article>
+        <article>
+          <span class="mono">02</span>
+          <h3>LOCATION & TELEMETRY</h3>
+          <p>
+            Dashboard and map views bring position, navigation, and
+            system-status information together, with target-coordinate and
+            home-point controls visible in the interface.
+          </p>
+        </article>
+        <article>
+          <span class="mono">03</span>
+          <h3>CONTROL & TRACEABILITY</h3>
+          <p>
+            Manual-control, cleaning-pattern, and activity-log screens present
+            the operational side of the system, including controls, parameters,
+            and command history.
+          </p>
+        </article>
+        <p class="case-credit">
+          Built as a team thesis. The 73.48% mAP50 figure is the reported model
+          evaluation result; individual confidence scores in the screenshots
+          describe separate predictions.
+        </p>
+      </section>
+      <aside class="related-project section-pad">
+        <p class="eyebrow">THE OTHER HALF OF THE THESIS</p>
+        <a href="./hydrobot.html"
+          ><span>HYDROBOT</span><span aria-hidden="true">↗</span></a
+        >
+        <p>Meet the physical prototype behind the interface.</p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      >
+      <p>© <span id="year">2026</span> Vincent Sanchez</p>
+      <div class="footer-actions">
+        <button id="motion-toggle" aria-pressed="false" hidden>
+          Reduce motion</button
+        ><a href="https://github.com/PATOTSTI/portfolio">View source ↗</a
+        ><a href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <dialog
+      class="image-viewer"
+      aria-labelledby="viewer-title"
+      data-lenis-prevent
+    >
+      <div class="viewer-toolbar">
+        <h2 id="viewer-title">Project image</h2>
+        <div>
+          <button type="button" data-viewer-zoom aria-pressed="false">
+            Zoom in</button
+          ><a
+            data-viewer-original
+            href="./assets/images/projects/dashboard.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open image ↗</a
+          ><button
+            type="button"
+            data-viewer-close
+            autofocus
+            aria-label="Close image viewer"
+          >
+            Close ×
+          </button>
+        </div>
+      </div>
+      <div
+        class="viewer-canvas"
+        tabindex="0"
+        aria-label="Image area; scroll to inspect when zoomed"
+      >
+        <img class="viewer-image" alt="" />
+      </div>
+      <div class="viewer-bottom">
+        <button type="button" data-viewer-prev aria-label="Previous image">
+          ← Previous
+        </button>
+        <p class="viewer-count" aria-live="polite"></p>
+        <button type="button" data-viewer-next aria-label="Next image">
+          Next →
+        </button>
+      </div>
+      <p class="viewer-caption"></p>
+    </dialog>
+  </body>
+</html>

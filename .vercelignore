@@ -1,0 +1,13 @@
+.git
+.next
+.npm-cache
+.tools
+.preview
+node_modules
+Media
+assets/masters
+BUILD-PLAN.md
+README.md
+ASSET-NOTES.md
+*.log
+.env*

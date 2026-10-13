@@ -1,52 +1,59 @@
-# Portfolio
+# Vincent Sanchez — Portfolio
 
-A minimal Next.js starter for a Computer Engineering portfolio.
+A static, responsive portfolio built with HTML, CSS, and vanilla JavaScript.
+GSAP 3.13.0, ScrollTrigger 3.13.0, and Lenis 1.3.26 load from pinned CDN URLs.
+No framework, application dependencies, or paid media service is required.
 
-## Local development
+## Preview
 
-Use Node.js 24.x. In PowerShell, run:
-
-```powershell
-npm.cmd install
-npm.cmd run dev
-```
-
-Open http://localhost:3000. Edit `app/page.js` for the homepage and
-`app/globals.css` for its styles.
-
-## Verify the production build
+Open index.html directly in a browser for a quick review. For a local HTTP preview:
 
 ```powershell
-npm.cmd run build
+node scripts/prepare-deploy.mjs
+npx.cmd --yes serve dist
 ```
 
-## Connect GitHub and Vercel
+Use the Local URL printed by the server. The dist directory contains public files only.
 
-1. Create an empty GitHub repository named `portfolio`.
-2. Push this project's source files to that repository. Keep `node_modules`,
-   `.next`, `.npm-cache`, `.vercel`, and environment files out of Git.
-3. Open https://vercel.com/new and connect your GitHub account.
-4. Grant Vercel access to the portfolio repository, then import it.
-5. Use the Next.js framework preset and the repository root (`./`). Leave
-   the install command, build command, and output directory at their defaults.
-   No environment variables are needed for this starter.
-6. Click Deploy. Vercel provides the deployed site's URL when the build succeeds.
+## Edit
 
-Later pushes to the production branch trigger production deployments.
+- index.html: content, contact links, system diagram, and page sections.
+- style.css: colors, fonts, responsive layouts, and motion overrides.
+- script.js: navigation, system explorer, case-study navigation, and motion controls.
+- assets/: optimized public media and locally hosted licensed fonts.
+- BUILD-PLAN.md: creative brief and approved video-free revision.
 
-Official guide: https://vercel.com/docs/git/vercel-for-github
+The graduation photograph is optimized into two WebP sizes in assets/images/.
+The original Media/GRAD PHOTO.JPG is ignored by Git and deployment packaging.
+Email and LinkedIn use Vincent's confirmed destinations. The résumé action is
+omitted until the actual PDF is supplied; put it under assets/documents/ and
+add a normal link when ready.
 
-## Optional: link this local folder with Vercel CLI
+## Vercel
 
-After the project exists in Vercel:
+This replaces the original Next.js starter. vercel.json selects the Other
+framework preset, no dependency installation, and a simple Node file-copy
+command that packages the static site into dist. It does not compile or run
+an application server. The existing GitHub repository stays connected to the
+existing Vercel project.
 
-```powershell
-npx.cmd vercel login
-npx.cmd vercel link
-```
+Before production publication, verify a Vercel preview uses this configuration
+and that old Next.js dashboard overrides do not interfere. The output includes
+only index.html, style.css, script.js, and assets/. Original photos, planning
+documents, source tooling, and caches are outside the served directory.
 
-Complete sign-in in your browser. In the link prompts, select your account,
-choose the existing Vercel portfolio project, and use the current directory.
-Linking creates local `.vercel` configuration, which is ignored by Git.
+Pushing main updates production. This implementation is prepared locally;
+publishing is a separate step.
 
-Official guide: https://vercel.com/docs/cli/link
+## Verification
+
+Checked in local Chrome at 320, 390, 768, 1024, and 1440 px, including system
+explorer, case-study disclosure, mobile menu and Escape, reduced-motion control,
+blocked animation CDNs, and JavaScript disabled. Automated axe checks cover
+WCAG A/AA rules; they do not replace a full manual accessibility audit.
+
+## Assets and credits
+
+See ASSET-NOTES.md. The original graduation photograph retains its visible
+Art Studio Photography credit. Barlow Condensed and Manrope are distributed
+under the SIL Open Font License; notices are included in assets/fonts/.

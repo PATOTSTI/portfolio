@@ -6,3 +6,8 @@ out/
 .env*
 !.env.example
 *.log
+.tools/
+.preview/
+Media/
+assets/masters/
+dist/

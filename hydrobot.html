@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#171519" />
+    <title>Hydrobot | Vincent Sanchez</title>
+    <meta
+      name="description"
+      content="The physical side of Vincent Sanchez’s team thesis: an ESP32-based RC boat prototype, navigation, and natural-fiber filtration."
+    />
+    <link
+      rel="canonical"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/hydrobot.html"
+    />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
+    ></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./assets/project-gallery.js"></script>
+  </head>
+  <body id="top" class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a
+        class="wordmark"
+        href="./index.html"
+        aria-label="Vincent Sanchez, portfolio home"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        hidden
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="./index.html#work">All projects <span>↖</span></a
+        ><a href="./index.html#about">My story</a
+        ><a class="nav-contact" href="./index.html#contact"
+          >Let's connect <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link mono" href="./index.html#work"
+          >← BACK TO SELECTED WORK</a
+        >
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">01 / THE HARDWARE · TEAM THESIS</p>
+            <h1>HYDROBOT<span class="pink-text">.</span></h1>
+          </div>
+          <p>An idea you can build.<br />A system you can put to work.</p>
+        </div>
+        <div class="case-tags mono">
+          <span>EMBEDDED SYSTEMS</span><span>NAVIGATION</span
+          ><span>NATURAL-FIBER FILTRATION</span>
+        </div>
+        <figure class="hardware-hero">
+          <a
+            class="image-open photo-reveal"
+            href="./assets/images/projects/hydrobot-1600.webp"
+            data-lightbox="hydrobot"
+            data-title="Hydrobot — the actual prototype"
+            data-caption="The team's physical RC boat prototype. Original photograph supplied by Vincent."
+            aria-label="Enlarge the Hydrobot prototype photograph"
+            ><img
+              class="project-photo"
+              src="./assets/images/projects/hydrobot-1600.webp"
+              srcset="
+                ./assets/images/projects/hydrobot-800.webp   800w,
+                ./assets/images/projects/hydrobot-1600.webp 1600w
+              "
+              sizes="90vw"
+              width="1600"
+              height="1200"
+              fetchpriority="high"
+              alt="Hydrobot prototype photographed indoors, showing its floating hull, tubing, and central assembly."
+            /><span class="enlarge-label" aria-hidden="true"
+              >VIEW FULL PHOTO ↗</span
+            ></a
+          >
+          <figcaption class="mono">
+            <span>FIG. 01 / ACTUAL PROTOTYPE</span
+            ><span>TEAM THESIS · HYDROBOT & AQUADETECT</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        class="case-context section-paper section-pad"
+        aria-labelledby="hydro-overview"
+      >
+        <div class="section-label mono">
+          <span>THE BUILD</span><span>HARDWARE MEETS SOFTWARE</span>
+        </div>
+        <div class="case-context-grid">
+          <h2 id="hydro-overview" data-reveal>
+            FROM COMPONENTS<br />TO A CONNECTED<br /><span class="rose-deep"
+              >PROTOTYPE.</span
+            >
+          </h2>
+          <div>
+            <p class="case-lead">
+              Hydrobot is the physical platform in our team's oil-spill
+              detection and filtration thesis.
+            </p>
+            <p>
+              We designed and built an autonomous RC boat with an ESP32, GPS,
+              and IMU, bringing embedded hardware and navigation into the
+              project. A natural-fiber filtration system explored material
+              ratios for oil absorption.
+            </p>
+            <p>
+              AquaDetect is the connected software side: a dashboard for
+              telemetry, mapping, and detection results. Together, the two parts
+              connect what happens in the physical system with what an operator
+              can see on screen.
+            </p>
+            <div class="tech-list">
+              <span>ESP32</span><span>GPS</span><span>IMU</span
+              ><span>Natural-fiber filtration</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="case-features section-pad"
+        aria-labelledby="hydro-details"
+      >
+        <div class="section-label mono">
+          <span>INSIDE THE PROJECT</span
+          ><span>THREE CONNECTED DISCIPLINES</span>
+        </div>
+        <h2 class="visually-hidden" id="hydro-details">
+          Hydrobot project details
+        </h2>
+        <article>
+          <span class="mono">01</span>
+          <h3>THE PHYSICAL BUILD</h3>
+          <p>
+            A working thesis prototype brings practical questions into focus:
+            how components fit together, how they connect, and how to make the
+            whole assembly function.
+          </p>
+        </article>
+        <article>
+          <span class="mono">02</span>
+          <h3>POSITION & ORIENTATION</h3>
+          <p>
+            The ESP32, GPS, and IMU form the embedded foundation for the boat's
+            navigation and telemetry within the thesis system.
+          </p>
+        </article>
+        <article>
+          <span class="mono">03</span>
+          <h3>FILTRATION EXPLORATION</h3>
+          <p>
+            The team engineered a natural-fiber filtration system and optimized
+            material ratios for oil absorption efficiency.
+          </p>
+        </article>
+        <p class="case-credit">
+          Built as a team thesis. The photograph shows the real prototype; the
+          portfolio does not simulate a live boat connection.
+        </p>
+      </section>
+      <aside class="related-project section-pad">
+        <p class="eyebrow">THE OTHER HALF OF THE THESIS</p>
+        <a href="./aquadetect.html"
+          ><span>AQUADETECT</span><span aria-hidden="true">↗</span></a
+        >
+        <p>
+          Explore the interface that brings detection and monitoring together.
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      >
+      <p>© <span id="year">2026</span> Vincent Sanchez</p>
+      <div class="footer-actions">
+        <button id="motion-toggle" aria-pressed="false" hidden>
+          Reduce motion</button
+        ><a href="https://github.com/PATOTSTI/portfolio">View source ↗</a
+        ><a href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <dialog
+      class="image-viewer"
+      aria-labelledby="viewer-title"
+      data-lenis-prevent
+    >
+      <div class="viewer-toolbar">
+        <h2 id="viewer-title">Project image</h2>
+        <div>
+          <button type="button" data-viewer-zoom aria-pressed="false">
+            Zoom in</button
+          ><a
+            data-viewer-original
+            href="./assets/images/projects/dashboard.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open image ↗</a
+          ><button
+            type="button"
+            data-viewer-close
+            autofocus
+            aria-label="Close image viewer"
+          >
+            Close ×
+          </button>
+        </div>
+      </div>
+      <div
+        class="viewer-canvas"
+        tabindex="0"
+        aria-label="Image area; scroll to inspect when zoomed"
+      >
+        <img class="viewer-image" alt="" />
+      </div>
+      <div class="viewer-bottom">
+        <button type="button" data-viewer-prev aria-label="Previous image">
+          ← Previous
+        </button>
+        <p class="viewer-count" aria-live="polite"></p>
+        <button type="button" data-viewer-next aria-label="Next image">
+          Next →
+        </button>
+      </div>
+      <p class="viewer-caption"></p>
+    </dialog>
+  </body>
+</html>
