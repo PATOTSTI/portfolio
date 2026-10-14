@@ -117,18 +117,6 @@
           delay: 0.15,
           clearProps: "all",
         });
-        gsap.from(".evidence-strip > div", {
-          y: 14,
-          opacity: 0.3,
-          duration: 0.6,
-          stagger: 0.1,
-          clearProps: "all",
-          scrollTrigger: {
-            trigger: ".evidence-strip",
-            start: "top 94%",
-            once: true,
-          },
-        });
       }
       gsap.utils.toArray("[data-reveal]").forEach((element) => {
         gsap.from(element, {
@@ -201,20 +189,22 @@
         );
       });
       if (desktop.matches && document.querySelector(".dashboard-window")) {
-        gsap.from(".dashboard-window", {
-          y: 24,
-          rotateX: 6,
-          rotateY: -4,
-          opacity: 0.6,
-          duration: 1,
-          ease: "power2.out",
-          clearProps: "all",
-          scrollTrigger: {
-            trigger: ".aquadetect-cover",
-            start: "top 85%",
-            once: true,
-          },
-        });
+        gsap.utils.toArray(".dashboard-window").forEach((frame) =>
+          gsap.from(frame, {
+            y: 24,
+            rotateX: 6,
+            rotateY: -4,
+            opacity: 0.6,
+            duration: 1,
+            ease: "power2.out",
+            clearProps: "all",
+            scrollTrigger: {
+              trigger: frame.closest(".project-image-link") || frame,
+              start: "top 85%",
+              once: true,
+            },
+          }),
+        );
       }
       if (document.querySelector(".case-heading")) {
         gsap.from(".case-heading", {

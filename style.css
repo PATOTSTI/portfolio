@@ -1420,6 +1420,88 @@ html[data-motion="reduce"] *::after {
   scroll-behavior: auto !important;
 }
 
+/* A compact editorial index for the three separate project pages. */
+.work.section-pad {
+  padding-top: 0;
+}
+.projects-header {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  border-bottom: 1px solid #c6bdbf;
+  margin-bottom: 36px;
+  min-height: 124px;
+}
+.projects-index {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #5f4e59;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+.projects-header h2 {
+  font-size: clamp(48px, 5.2vw, 80px);
+}
+.projects-count {
+  margin-left: auto;
+  padding: 8px 10px;
+  border: 1px solid #986177;
+  color: #78485f;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.project-tile--featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  border-bottom: 1px solid #c6bdbf;
+  padding-bottom: 36px;
+  gap: 36px;
+  align-items: center;
+}
+.project-tile--featured .project-tile-heading {
+  margin-top: 0;
+}
+.ephor-cover {
+  background: #362a33;
+}
+.ephor-stage {
+  padding: 40px 24px 52px;
+  background: radial-gradient(ellipse at 30% 0%, #735462, transparent 80%);
+}
+.project-team-note {
+  margin-top: 18px;
+  color: #78485f;
+  font-size: 10px;
+}
+.ephor-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 760px) {
+  .projects-header {
+    gap: 14px;
+    min-height: 100px;
+    margin-bottom: 24px;
+  }
+  .projects-index {
+    display: none;
+  }
+  .projects-count {
+    font-size: 9px;
+    padding: 7px;
+  }
+  .project-tile--featured {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-bottom: 30px;
+  }
+  .ephor-stage {
+    padding: 28px 16px 48px;
+  }
+}
+
 /* Real project media and separate case studies. */
 .project-pair-intro {
   display: flex;

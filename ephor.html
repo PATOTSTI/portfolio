@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#171519" />
+    <title>EPHOR | Vincent Sanchez</title>
+    <meta
+      name="description"
+      content="EPHOR: an AI-powered university HR system for competency assessments and learning plans. A Flutter, Supabase, FastAPI, and Gemini team project."
+    />
+    <link
+      rel="canonical"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/ephor.html"
+    />
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
+    ></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./assets/project-gallery.js"></script>
+  </head>
+  <body id="top" class="project-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a
+        class="wordmark"
+        href="./index.html"
+        aria-label="Vincent Sanchez, portfolio home"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        hidden
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="./index.html#work">All projects <span>↖</span></a
+        ><a href="./index.html#about">My story</a
+        ><a class="nav-contact" href="./index.html#contact"
+          >Let's connect <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link mono" href="./index.html#work"
+          >← BACK TO PROJECTS</a
+        >
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">COGNATE / AI-POWERED HR SYSTEM</p>
+            <h1>EPHOR<span class="pink-text">.</span></h1>
+          </div>
+          <p>From assessment data<br />to a clearer training plan.</p>
+        </div>
+        <div class="case-tags mono">
+          <span>AI AUTOMATION</span><span>WEB + ANDROID</span
+          ><span>21-MEMBER TEAM</span>
+        </div>
+        <figure class="hardware-hero ephor-hero">
+          <a
+            class="image-open"
+            href="./assets/images/projects/ephor.webp"
+            data-lightbox="ephor"
+            data-title="EPHOR — sign-in interface"
+            data-caption="The supplied EPHOR sign-in screenshot, showing employee-code authentication and the Supervisor and Human Resource roles."
+            aria-label="Enlarge the EPHOR sign-in screenshot"
+            ><img
+              src="./assets/images/projects/ephor.webp"
+              width="1917"
+              height="939"
+              fetchpriority="high"
+              alt="EPHOR sign-in screen with employee code and password fields, role selection, and a university campus background."
+            /><span class="enlarge-label" aria-hidden="true"
+              >VIEW FULL SCREENSHOT ↗</span
+            ></a
+          >
+          <figcaption class="mono">
+            <span>FIG. 01 / SIGN-IN INTERFACE</span
+            ><span>COGNATE SUBJECT · TEAM PROJECT</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        class="case-context section-paper section-pad"
+        aria-labelledby="ephor-overview"
+      >
+        <div class="section-label mono">
+          <span>THE SYSTEM</span><span>ASSESS. UNDERSTAND. PLAN.</span>
+        </div>
+        <div class="case-context-grid">
+          <h2 id="ephor-overview" data-reveal>
+            ASSESSMENTS<br />INTO <span class="rose-deep">ACTION.</span>
+          </h2>
+          <div>
+            <p class="case-lead">
+              EPHOR helps university HR teams and supervisors turn competency
+              assessments into targeted learning &amp; development plans.
+            </p>
+            <p>
+              Built for web and Android, the system automates Competency
+              Assessment Training Needs Analysis (CATNA) processing. A FastAPI
+              service with Google Gemini analyzes assessment data, recommends
+              training, groups personnel with similar needs, and flags
+              retraining needs after impact assessments.
+            </p>
+            <p>
+              Role-based dashboards and an in-app AI assistant, Augustus,
+              support the workflow from assessment to follow-up.
+            </p>
+            <div class="tech-list">
+              <span>Flutter / Dart</span><span>Supabase</span
+              ><span>FastAPI</span><span>Google Gemini</span><span>Pandas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="case-features section-pad"
+        aria-labelledby="ephor-details"
+      >
+        <div class="section-label mono">
+          <span>MY CONTRIBUTIONS</span><span>WITHIN A 21-MEMBER TEAM</span>
+        </div>
+        <h2 class="visually-hidden" id="ephor-details">
+          Selected EPHOR development contributions
+        </h2>
+        <article>
+          <span class="mono">01</span>
+          <h3>CROSS-PLATFORM INTERFACES</h3>
+          <p>
+            Built responsive Flutter/Dart interfaces for web and Android using
+            MVVM, Provider, and GoRouter, alongside dynamic CATNA forms with
+            draft, publish, and validation workflows.
+          </p>
+        </article>
+        <article>
+          <span class="mono">02</span>
+          <h3>ROLE-BASED ACCESS</h3>
+          <p>
+            Implemented Supabase authentication for HR and Supervisor roles,
+            including employee-code login, password recovery, route guards, and
+            row-level security handling.
+          </p>
+        </article>
+        <article>
+          <span class="mono">03</span>
+          <h3>AI-ASSISTED ANALYSIS</h3>
+          <p>
+            Integrated Gemini through FastAPI with Pandas-based Excel
+            processing, structured outputs, and retry logic to support training
+            recommendations and analytics.
+          </p>
+        </article>
+        <article>
+          <span class="mono">04</span>
+          <h3>DELIVERY &amp; TESTING</h3>
+          <p>
+            Set up GitHub Actions for Flutter web builds and Vercel deployment,
+            collaborated through pull requests, and tested across Chrome, Edge,
+            and Android to resolve interface, validation, and data-persistence
+            issues.
+          </p>
+        </article>
+        <p class="case-credit">
+          Developed as part of a 21-member team for our COGNATE subject. The
+          image above is the project's actual sign-in interface.
+        </p>
+      </section>
+      <aside class="related-project section-pad">
+        <p class="eyebrow">MORE PROJECTS</p>
+        <a href="./aquadetect.html"
+          ><span>AQUADETECT</span><span aria-hidden="true">↗</span></a
+        >
+        <p>
+          Explore computer vision, telemetry, and mapping in our team thesis.
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      >
+      <p>© <span id="year">2026</span> Vincent Sanchez</p>
+      <div class="footer-actions">
+        <button id="motion-toggle" aria-pressed="false" hidden>
+          Reduce motion</button
+        ><a href="https://github.com/PATOTSTI/portfolio">View source ↗</a
+        ><a href="#top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+    <dialog
+      class="image-viewer"
+      aria-labelledby="viewer-title"
+      data-lenis-prevent
+    >
+      <div class="viewer-toolbar">
+        <h2 id="viewer-title">Project image</h2>
+        <div>
+          <button type="button" data-viewer-zoom aria-pressed="false">
+            Zoom in</button
+          ><a
+            data-viewer-original
+            href="./assets/images/projects/ephor.webp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open image ↗</a
+          ><button
+            type="button"
+            data-viewer-close
+            autofocus
+            aria-label="Close image viewer"
+          >
+            Close ×
+          </button>
+        </div>
+      </div>
+      <div
+        class="viewer-canvas"
+        tabindex="0"
+        aria-label="Image area; scroll to inspect when zoomed"
+      >
+        <img class="viewer-image" alt="" />
+      </div>
+      <div class="viewer-bottom">
+        <button type="button" data-viewer-prev aria-label="Previous image">
+          ← Previous
+        </button>
+        <p class="viewer-count" aria-live="polite"></p>
+        <button type="button" data-viewer-next aria-label="Next image">
+          Next →
+        </button>
+      </div>
+      <p class="viewer-caption"></p>
+    </dialog>
+  </body>
+</html>

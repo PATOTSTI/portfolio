@@ -74,7 +74,7 @@
         Menu <span aria-hidden="true">+</span>
       </button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="#work">Selected work <span>01</span></a>
+        <a href="#work">Projects <span>01</span></a>
         <a href="#about">My story <span>02</span></a>
         <a class="nav-contact" href="#contact"
           >Let's connect <span aria-hidden="true">↗</span></a
@@ -250,48 +250,74 @@
       </section>
 
       <section
-        class="evidence-strip"
-        aria-label="Selected project and internship evidence"
-      >
-        <div>
-          <strong>73.48<span>%</span></strong>
-          <p>mAP50 · thesis detection result</p>
-        </div>
-        <div>
-          <strong>06</strong>
-          <p>YOLOv8 training iterations</p>
-        </div>
-        <div>
-          <strong>VB6 <span>→</span> PYTHON</strong>
-          <p>Application migration · IT internship</p>
-        </div>
-      </section>
-
-      <section
         id="work"
         class="work section-paper section-pad"
         aria-labelledby="work-heading"
       >
-        <div class="section-label mono">
-          <span>01 / SELECTED WORK</span
-          ><span>IDEAS, MEET THE REAL WORLD.</span>
-        </div>
-        <div class="section-heading">
-          <h2 id="work-heading" data-reveal>
-            A LITTLE THEORY.<br /><span class="muted-heading"
-              >A LOT OF BUILDING.</span
-            >
-          </h2>
-          <p>Learning makes more sense<br />when you put it to work.</p>
-        </div>
-        <div class="project-pair-intro">
-          <p class="eyebrow">ONE TEAM THESIS. TWO CONNECTED BUILDS.</p>
-          <p>
-            The physical prototype and the software that brings its data into
-            view. Explore each side of the project.
-          </p>
+        <div class="projects-header">
+          <span class="projects-index mono" aria-hidden="true">VS / 01</span>
+          <h2 id="work-heading">PROJECTS</h2>
+          <span class="projects-count mono">3 PROJECTS</span>
         </div>
         <div class="project-grid">
+          <article
+            class="project-tile project-tile--featured"
+            aria-labelledby="ephor-title"
+          >
+            <a
+              class="project-image-link ephor-cover"
+              href="./ephor.html"
+              aria-label="Explore the EPHOR HR system project"
+            >
+              <div class="project-cover-label mono">
+                <span>COGNATE / TEAM PROJECT</span><span>WEB + ANDROID</span>
+              </div>
+              <div class="ephor-stage">
+                <div class="dashboard-window">
+                  <div class="window-chrome" aria-hidden="true">
+                    <i></i><i></i><i></i><span>EPHOR / SIGN IN</span>
+                  </div>
+                  <img
+                    src="./assets/images/projects/ephor-preview.webp"
+                    width="1000"
+                    height="490"
+                    loading="lazy"
+                    decoding="async"
+                    alt="EPHOR sign-in interface with employee-code login and Supervisor and Human Resource roles."
+                  />
+                </div>
+              </div>
+              <span class="project-image-action" aria-hidden="true"
+                >EXPLORE THE SYSTEM ↗</span
+              ></a
+            >
+            <div class="featured-project-copy">
+              <div class="project-tile-heading">
+                <div>
+                  <p class="eyebrow">
+                    AI AUTOMATION / CROSS-PLATFORM DEVELOPMENT
+                  </p>
+                  <h3 id="ephor-title"><a href="./ephor.html">EPHOR</a></h3>
+                </div>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p class="project-tile-copy">
+                An AI-powered HR system that turns competency assessments into
+                training recommendations and learning &amp; development plans
+                for university personnel.
+              </p>
+              <p class="project-team-note mono">
+                COGNATE SUBJECT · 21-MEMBER TEAM
+              </p>
+              <div class="tech-list">
+                <span>Flutter / Dart</span><span>Supabase</span
+                ><span>FastAPI</span><span>Gemini AI</span>
+              </div>
+              <a class="text-link dark-link" href="./ephor.html"
+                >Explore EPHOR <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
           <article class="project-tile" aria-labelledby="hydrobot-title">
             <a
               class="project-image-link hydrobot-cover"

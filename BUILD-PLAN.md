@@ -2,6 +2,19 @@
 
 ## Document control
 
+### Approved project presentation revision — October 14, 2026
+
+This revision supersedes the earlier stats-strip and combined-project presentation requirements below.
+
+- Remove the homepage stats strip. Keep the 73.48% mAP50 result and training iterations within AquaDetect, and the VB6-to-Python migration within the internship section.
+- Use a compact **PROJECTS** header with a **3 PROJECTS** count and **Projects** in navigation. Preserve charcoal, ivory, and muted pink styling.
+- Feature EPHOR, followed by Hydrobot and AquaDetect. Provide `ephor.html`, `hydrobot.html`, and `aquadetect.html`. Hydrobot and AquaDetect remain two parts of one team thesis.
+- EPHOR is a COGNATE web/Android HR system built in a 21-member team. Summarize CATNA processing, learning plans, Gemini-assisted recommendations, and HR/Supervisor access. Include confirmed Flutter/Dart, Supabase, FastAPI, deployment, and testing contributions. Do not claim all team pull requests or invent metrics.
+- Label EPHOR's supplied image as its sign-in screen. Describe other features in text without inventing screenshots.
+- Use the actual Hydrobot photograph and eight AquaDetect screenshots, with enlargement, zoom, keyboard controls, and no-JavaScript image-link fallbacks.
+- Use the updated graduation photograph through `vincent-graduation-v2-*`. Preserve identity and originals. Use subtle CSS/GSAP framing and motion with reduced-motion support.
+- Package four HTML pages and public assets into `dist/`; exclude `Media/` originals.
+
 **Project:** Vincent Sanchez / Computer Engineering Portfolio  
 **Creative concept:** Curiosity, put to work.  
 **Document type:** Professional creative brief followed by implementation instructions for Claude Code or the coding agent working in this repository.  

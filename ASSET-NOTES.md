@@ -3,17 +3,24 @@
 ## Personal photograph
 
 - Source: `Media/GRAD PHOTO.JPG`, supplied by Vincent during implementation.
-- Output: `assets/images/vincent-graduation-600.webp` and `vincent-graduation-1000.webp`.
+- Current output: `assets/images/vincent-graduation-v2-600.webp` and `vincent-graduation-v2-1000.webp`, using the newly supplied portrait.
 - Processing: proportional resize and WebP compression only. No generative editing,
-  facial alteration, retouching, or removal of the visible studio credit.
+  facial alteration, retouching, or removal of source details.
 - Placement: About / My Story. Original file remains unchanged and excluded from Git.
 
 ## Original site graphics
 
 - Exploded hardware assembly in the hero: symbolic SVG illustration, authored for this site.
-- Hydrobot system view: conceptual SVG, not a real dashboard, photograph, or live feed.
+- Project pages use the supplied real photographs and screenshots, not live feeds.
 - Grain SVG, VS favicon, and social preview: original site graphics.
 - No generated video, paid stock, or invented project photographs.
+
+## Project media
+
+- Hydrobot source: `Media/Hydrobot/HydroBot.JPG`; 800px and 1600px WebP exports.
+- AquaDetect source: `Media/AquaDetect/`; eight full-resolution lossless WebP screenshots and smaller previews for dashboard, navigation, detection results, manual control, batch screening, oil detection, cleaning patterns, and logs.
+- EPHOR source: `Media/Ephor - AI CATNA FORM/EPHOR.png`; full-resolution lossless `ephor.webp` and 1000px `ephor-preview.webp`. The supplied screenshot shows sign-in, not training recommendations.
+- All public exports live in `assets/images/projects/`. Original files remain unchanged and excluded from deployment. CSS and GSAP provide framing and motion without changing screenshot contents or hardware details.
 
 ## Fonts
 
@@ -30,5 +37,5 @@
 ## Optional assets still to supply
 
 - Actual résumé PDF; résumé links are not published until the file exists.
-- Hydrobot prototype photographs, real dashboard/detection screenshots, and project repository URLs.
+- Public project repository or live-demo URLs; additional EPHOR form and dashboard screenshots.
 - Precise individual thesis responsibilities if Vincent wants a contribution-specific case study.

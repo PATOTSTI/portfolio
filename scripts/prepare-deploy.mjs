@@ -10,6 +10,7 @@ const allowed = new Set([
   "index.html",
   "hydrobot.html",
   "aquadetect.html",
+  "ephor.html",
   "style.css",
   "script.js",
   "assets",

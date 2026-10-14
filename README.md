@@ -19,7 +19,9 @@ Use the Local URL printed by the server. The dist directory contains public file
 
 - index.html: content, contact links, system diagram, and page sections.
 - style.css: colors, fonts, responsive layouts, and motion overrides.
-- script.js: navigation, system explorer, case-study navigation, and motion controls.
+- script.js: navigation, scroll animation, and motion controls.
+- hydrobot.html, aquadetect.html, ephor.html: separate project case studies.
+- assets/project-gallery.js: screenshot selection and accessible image viewer.
 - assets/: optimized public media and locally hosted licensed fonts.
 - BUILD-PLAN.md: creative brief and approved video-free revision.
 
@@ -39,7 +41,7 @@ existing Vercel project.
 
 Before production publication, verify a Vercel preview uses this configuration
 and that old Next.js dashboard overrides do not interfere. The output includes
-only index.html, style.css, script.js, and assets/. Original photos, planning
+only index.html, hydrobot.html, aquadetect.html, ephor.html, style.css, script.js, and assets/. Original photos, planning
 documents, source tooling, and caches are outside the served directory.
 
 Pushing main updates production. This implementation is prepared locally;
@@ -47,13 +49,13 @@ publishing is a separate step.
 
 ## Verification
 
-Checked in local Chrome at 320, 390, 768, 1024, and 1440 px, including system
-explorer, case-study disclosure, mobile menu and Escape, reduced-motion control,
-blocked animation CDNs, and JavaScript disabled. Automated axe checks cover
+Project pages checked in local Chrome at 320, 390, 768, and 1440 px, including
+gallery selection, image zoom, keyboard navigation, Escape and focus return,
+reduced-motion control, blocked animation CDNs, and JavaScript disabled. Automated axe checks cover
 WCAG A/AA rules; they do not replace a full manual accessibility audit.
 
 ## Assets and credits
 
-See ASSET-NOTES.md. The original graduation photograph retains its visible
-Art Studio Photography credit. Barlow Condensed and Manrope are distributed
+See ASSET-NOTES.md for the updated portrait and real project media. Source
+images remain unchanged. Barlow Condensed and Manrope are distributed
 under the SIL Open Font License; notices are included in assets/fonts/.
