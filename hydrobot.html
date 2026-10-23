@@ -11,14 +11,14 @@
     />
     <link
       rel="canonical"
-      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/hydrobot.html"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/projects/hydrobot"
     />
-    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
@@ -31,16 +31,13 @@
       defer
       src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
     ></script>
-    <script defer src="./script.js"></script>
-    <script defer src="./assets/project-gallery.js"></script>
+    <script defer src="../script.js"></script>
+    <script defer src="../assets/project-gallery.js"></script>
   </head>
   <body id="top" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a
-        class="wordmark"
-        href="./index.html"
-        aria-label="Vincent Sanchez, portfolio home"
+      <a class="wordmark" href="/" aria-label="Vincent Sanchez, portfolio home"
         >VINCENT<span class="wordmark-dot">.</span
         ><span class="wordmark-surname">SANCHEZ</span></a
       ><button
@@ -52,18 +49,31 @@
         Menu <span aria-hidden="true">+</span>
       </button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="./index.html#work">All projects <span>↖</span></a
-        ><a href="./index.html#about">My story</a
-        ><a class="nav-contact" href="./index.html#contact"
-          >Let's connect <span aria-hidden="true">↗</span></a
-        >
+        <a href="/#work">All projects <span>↖</span></a
+        ><a href="/#about">My story</a
+        ><a class="nav-contact" href="/#contact"
+          >Let's connect
+          <span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
       </nav>
     </header>
     <main id="main">
       <section class="case-hero section-pad">
-        <a class="back-link mono" href="./index.html#work"
-          >← BACK TO PROJECTS</a
-        >
+        <a class="back-link mono" href="/#work">← BACK TO PROJECTS</a>
         <div class="case-heading">
           <div>
             <p class="eyebrow">01 / THE HARDWARE · TEAM THESIS</p>
@@ -78,27 +88,41 @@
         <figure class="hardware-hero">
           <a
             class="image-open photo-reveal"
-            href="./assets/images/projects/hydrobot-1600.webp"
+            href="../assets/images/projects/hydrobot-1600.webp"
             data-lightbox="hydrobot"
             data-title="Hydrobot — the actual prototype"
             data-caption="The team's physical RC boat prototype. Original photograph supplied by Vincent."
             aria-label="Enlarge the Hydrobot prototype photograph"
             ><img
               class="project-photo"
-              src="./assets/images/projects/hydrobot-1600.webp"
+              src="../assets/images/projects/hydrobot-1600.webp"
               srcset="
-                ./assets/images/projects/hydrobot-800.webp   800w,
-                ./assets/images/projects/hydrobot-1600.webp 1600w
+                ../assets/images/projects/hydrobot-800.webp   800w,
+                ../assets/images/projects/hydrobot-1600.webp 1600w
               "
               sizes="90vw"
               width="1600"
               height="1200"
               fetchpriority="high"
-              alt="Hydrobot prototype photographed indoors, showing its floating hull, tubing, and central assembly."
-            /><span class="enlarge-label" aria-hidden="true"
-              >VIEW FULL PHOTO ↗</span
-            ></a
-          >
+              alt="Hydrobot prototype photographed indoors, showing its floating hull, tubing, and central assembly." /><span
+              class="enlarge-label"
+              aria-hidden="true"
+              >VIEW FULL PHOTO
+              <svg
+                class="icon-arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
           <figcaption class="mono">
             <span>FIG. 01 / ACTUAL PROTOTYPE</span
             ><span>TEAM THESIS · HYDROBOT & AQUADETECT</span>
@@ -143,51 +167,476 @@
         </div>
       </section>
       <section
-        class="case-features section-pad"
-        aria-labelledby="hydro-details"
+        class="engineering-section section-paper section-pad"
+        id="design"
+        aria-labelledby="design-heading"
       >
         <div class="section-label mono">
-          <span>INSIDE THE PROJECT</span
-          ><span>THREE CONNECTED DISCIPLINES</span>
+          <span>DESIGN &amp; CONSTRUCTION</span
+          ><span>FROM DRAWING TO PROTOTYPE</span>
         </div>
-        <h2 class="visually-hidden" id="hydro-details">
-          Hydrobot project details
-        </h2>
-        <article>
-          <span class="mono">01</span>
-          <h3>THE PHYSICAL BUILD</h3>
+        <div class="engineering-intro">
+          <h2 id="design-heading" data-reveal>
+            BUILT FROM<br /><span class="rose-deep">THE INSIDE OUT.</span>
+          </h2>
           <p>
-            A working thesis prototype brings practical questions into focus:
-            how components fit together, how they connect, and how to make the
-            whole assembly function.
+            Every part has a job. These drawings show how our team brought the
+            floating platform, electronics, and filtration system together.
           </p>
-        </article>
-        <article>
-          <span class="mono">02</span>
-          <h3>POSITION & ORIENTATION</h3>
+        </div>
+        <div class="engineering-layout">
+          <figure class="engineering-figure">
+            <a
+              class="engineering-image image-open"
+              href="../assets/images/projects/hydrobot-3d-design.webp"
+              data-lightbox="hydrobot-3d-design"
+              data-title="Complete 3D layout"
+              data-caption="The complete design brings flotation, electronics, filtration, and solar support into one platform. Overall dimensions: 110 cm long, 60 cm wide, and 48 cm high."
+              aria-label="Enlarge complete 3d layout"
+              ><img
+                src="../assets/images/projects/hydrobot-3d-design.webp"
+                width="697"
+                height="671"
+                loading="lazy"
+                decoding="async"
+                alt="Isometric Hydrobot assembly drawing showing twin hulls, central enclosure, filtration chamber, solar mount, and front intake." /><span
+                class="drawing-open mono"
+                aria-hidden="true"
+                >ENLARGE
+                <svg
+                  class="icon-arrow"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span
+            ></a>
+            <figcaption class="mono">FIG. 02 / COMPLETE 3D LAYOUT</figcaption>
+          </figure>
+          <div class="engineering-copy">
+            <p class="eyebrow">THE COMPLETE PLATFORM</p>
+            <h3>ONE CONNECTED BUILD.</h3>
+            <p>
+              The complete design brings flotation, electronics, filtration, and
+              solar support into one platform. Overall dimensions: 110 cm long,
+              60 cm wide, and 48 cm high.
+            </p>
+            <dl class="design-dimensions">
+              <div>
+                <dt>Length</dt>
+                <dd>110 <span>cm</span></dd>
+              </div>
+              <div>
+                <dt>Width</dt>
+                <dd>60 <span>cm</span></dd>
+              </div>
+              <div>
+                <dt>Height</dt>
+                <dd>48 <span>cm</span></dd>
+              </div>
+            </dl>
+            <p>
+              The twin-hull arrangement supports a central enclosure, filtration
+              chamber, solar mount, and front intake. Each subsystem has a
+              defined place in the assembly.
+            </p>
+            <a class="text-link dark-link" href="#components"
+              >Explore the components
+              <span aria-hidden="true"
+                ><svg
+                  class="icon-arrow"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M12 4v16m-7-7 7 7 7-7" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="engineering-section circuit-section section-pad"
+        id="electronics"
+        aria-labelledby="circuit-heading"
+      >
+        <div class="section-label mono">
+          <span>SENSING, POWER &amp; CONTROL</span
+          ><span>ESP32 AT THE CENTRE</span>
+        </div>
+        <div class="engineering-intro">
+          <h2 id="circuit-heading" data-reveal>
+            CONNECTING<br /><span class="pink-text">THE HARDWARE.</span>
+          </h2>
           <p>
-            The ESP32, GPS, and IMU form the embedded foundation for the boat's
-            navigation and telemetry within the thesis system.
+            The ESP32 collects sensor data, processes control signals, and
+            transmits information wirelessly. The circuit connects those
+            decisions to the boat's motors and water pump.
           </p>
-        </article>
-        <article>
-          <span class="mono">03</span>
-          <h3>FILTRATION EXPLORATION</h3>
+        </div>
+        <figure class="engineering-figure">
+          <a
+            class="engineering-image image-open"
+            href="../assets/images/projects/hydrobot-circuit.webp"
+            data-lightbox="hydrobot-circuit"
+            data-title="Circuit diagram"
+            data-caption="The ESP32 connects sensing and navigation with motor and pump control. The diagram also shows battery and solar power, step-down converters, fuses, and switches."
+            aria-label="Enlarge circuit diagram"
+            ><img
+              src="../assets/images/projects/hydrobot-circuit.webp"
+              width="1163"
+              height="735"
+              loading="lazy"
+              decoding="async"
+              alt="Hydrobot wiring diagram connecting the ESP32, GPS, compass, capacitive sensor, battery, solar panel, motor drivers, and water pump." /><span
+              class="drawing-open mono"
+              aria-hidden="true"
+              >ENLARGE
+              <svg
+                class="icon-arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+          <figcaption class="mono">FIG. 03 / CIRCUIT DIAGRAM</figcaption>
+        </figure>
+        <div class="circuit-notes">
+          <article>
+            <p class="eyebrow">01 / SENSE &amp; LOCATE</p>
+            <h3>Know the conditions.</h3>
+            <p>
+              A capacitive sensor, NEO-M8N GPS, and ICM-20948 compass module
+              provide surface-condition, position, and orientation data.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">02 / DISTRIBUTE POWER</p>
+            <h3>Supply each subsystem.</h3>
+            <p>
+              A 12V Li-ion battery with BMS and a 12V solar panel form the power
+              system, alongside step-down converters, fuses, and rocker
+              switches.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">03 / MOVE &amp; FILTER</p>
+            <h3>Turn signals into action.</h3>
+            <p>
+              Two BTS7960 drivers control the brushed DC motors. A relay
+              switches the 12V water pump to move collected water through
+              filtration.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        class="engineering-section section-paper section-pad"
+        id="components"
+        aria-labelledby="components-heading"
+      >
+        <div class="section-label mono">
+          <span>THE COMPONENTS</span><span>FIVE PARTS, ONE PLATFORM</span>
+        </div>
+        <div class="engineering-intro">
+          <h2 id="components-heading" data-reveal>
+            FORM MEETS<br /><span class="rose-deep">FUNCTION.</span>
+          </h2>
           <p>
-            The team engineered a natural-fiber filtration system and optimized
-            material ratios for oil absorption efficiency.
+            Materials, placement, and purpose. Dimensions below are length ×
+            width × height, as documented in our project notes.
           </p>
-        </article>
-        <p class="case-credit">
-          Built as a team thesis. The photograph shows the real prototype; the
-          portfolio does not simulate a live boat connection.
+        </div>
+        <div class="component-grid">
+          <article class="component-card">
+            <figure class="engineering-figure">
+              <a
+                class="engineering-image image-open"
+                href="../assets/images/projects/hydrobot-hulls.webp"
+                data-lightbox="hydrobot-hulls"
+                data-title="Twin hulls"
+                data-caption="Two sealed PVC hulls provide flotation and balance for the electronics, filtration chamber, and pump. Lightweight, water-resistant materials and sealed joints help limit water ingress."
+                aria-label="Enlarge twin hulls"
+                ><img
+                  src="../assets/images/projects/hydrobot-hulls.webp"
+                  width="713"
+                  height="545"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Dimensioned drawing of a sealed PVC hull with angled end fittings." /><span
+                  class="drawing-open mono"
+                  aria-hidden="true"
+                  >ENLARGE
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+              <figcaption class="mono">FIG. 04 / TWIN HULLS</figcaption>
+            </figure>
+            <div class="component-copy">
+              <p class="eyebrow">FLOTATION & BALANCE</p>
+              <h3>Twin hulls</h3>
+              <p>
+                Two sealed PVC hulls provide flotation and balance for the
+                electronics, filtration chamber, and pump. Lightweight,
+                water-resistant materials and sealed joints help limit water
+                ingress.
+              </p>
+              <p class="component-dimensions mono">110 × 10 × 18 cm each</p>
+            </div>
+          </article>
+          <article class="component-card">
+            <figure class="engineering-figure">
+              <a
+                class="engineering-image image-open"
+                href="../assets/images/projects/hydrobot-body.webp"
+                data-lightbox="hydrobot-body"
+                data-title="Electronics enclosure"
+                data-caption="A Sintra-board body reinforced with fiberglass and epoxy resin houses the controller, battery, sensors, and wiring. It adds structural support and protection from moisture."
+                aria-label="Enlarge electronics enclosure"
+                ><img
+                  src="../assets/images/projects/hydrobot-body.webp"
+                  width="835"
+                  height="622"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Dimensioned 3D drawing of the central Hydrobot body and its mounting platform." /><span
+                  class="drawing-open mono"
+                  aria-hidden="true"
+                  >ENLARGE
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+              <figcaption class="mono">
+                FIG. 05 / ELECTRONICS ENCLOSURE
+              </figcaption>
+            </figure>
+            <div class="component-copy">
+              <p class="eyebrow">STRUCTURE & PROTECTION</p>
+              <h3>Electronics enclosure</h3>
+              <p>
+                A Sintra-board body reinforced with fiberglass and epoxy resin
+                houses the controller, battery, sensors, and wiring. It adds
+                structural support and protection from moisture.
+              </p>
+              <p class="component-dimensions mono">42 × 26 × 32 cm</p>
+            </div>
+          </article>
+          <article class="component-card">
+            <figure class="engineering-figure">
+              <a
+                class="engineering-image image-open"
+                href="../assets/images/projects/hydrobot-filtration.webp"
+                data-lightbox="hydrobot-filtration"
+                data-title="Filtration chamber"
+                data-caption="An engineering-plastic chamber holds human and dog hair filtration media. A pump-connected hose feeds the chamber; side outlets let filtered water exit, while a gasket helps limit leakage."
+                aria-label="Enlarge filtration chamber"
+                ><img
+                  src="../assets/images/projects/hydrobot-filtration.webp"
+                  width="817"
+                  height="697"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Filtration chamber drawing with a top hose connector, removable lid, and side discharge holes." /><span
+                  class="drawing-open mono"
+                  aria-hidden="true"
+                  >ENLARGE
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+              <figcaption class="mono">FIG. 06 / FILTRATION CHAMBER</figcaption>
+            </figure>
+            <div class="component-copy">
+              <p class="eyebrow">OIL ABSORPTION & WATER FLOW</p>
+              <h3>Filtration chamber</h3>
+              <p>
+                An engineering-plastic chamber holds human and dog hair
+                filtration media. A pump-connected hose feeds the chamber; side
+                outlets let filtered water exit, while a gasket helps limit
+                leakage.
+              </p>
+              <p class="component-dimensions mono">18 × 17 × 10 cm</p>
+            </div>
+          </article>
+          <article class="component-card">
+            <figure class="engineering-figure">
+              <a
+                class="engineering-image image-open"
+                href="../assets/images/projects/hydrobot-solar-mount.webp"
+                data-lightbox="hydrobot-solar-mount"
+                data-title="Solar mount"
+                data-caption="A lightweight engineering-plastic frame supports the solar panel above the body. Its placement improves exposure to sunlight while keeping the panel clear of other components."
+                aria-label="Enlarge solar mount"
+                ><img
+                  src="../assets/images/projects/hydrobot-solar-mount.webp"
+                  width="615"
+                  height="693"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Dimensioned drawing of the elevated support frame for the solar panel." /><span
+                  class="drawing-open mono"
+                  aria-hidden="true"
+                  >ENLARGE
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+              <figcaption class="mono">FIG. 07 / SOLAR MOUNT</figcaption>
+            </figure>
+            <div class="component-copy">
+              <p class="eyebrow">PANEL SUPPORT & POSITIONING</p>
+              <h3>Solar mount</h3>
+              <p>
+                A lightweight engineering-plastic frame supports the solar panel
+                above the body. Its placement improves exposure to sunlight
+                while keeping the panel clear of other components.
+              </p>
+              <p class="component-dimensions mono">17 × 22 × 20 cm</p>
+            </div>
+          </article>
+          <article class="component-card">
+            <figure class="engineering-figure">
+              <a
+                class="engineering-image image-open"
+                href="../assets/images/projects/hydrobot-intake.webp"
+                data-lightbox="hydrobot-intake"
+                data-title="Oil collection mouth"
+                data-caption="The stainless-steel intake collects oil-contaminated surface water and provides mounts for the pump connection and capacitive sensor. Openings near the waterline guide water toward filtration and help screen out larger debris."
+                aria-label="Enlarge oil collection mouth"
+                ><img
+                  src="../assets/images/projects/hydrobot-intake.webp"
+                  width="855"
+                  height="691"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Stainless-steel intake drawing with pump and capacitive sensor openings and perforations near the waterline." /><span
+                  class="drawing-open mono"
+                  aria-hidden="true"
+                  >ENLARGE
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+              <figcaption class="mono">
+                FIG. 08 / OIL COLLECTION MOUTH
+              </figcaption>
+            </figure>
+            <div class="component-copy">
+              <p class="eyebrow">SURFACE-WATER INTAKE</p>
+              <h3>Oil collection mouth</h3>
+              <p>
+                The stainless-steel intake collects oil-contaminated surface
+                water and provides mounts for the pump connection and capacitive
+                sensor. Openings near the waterline guide water toward
+                filtration and help screen out larger debris.
+              </p>
+              <p class="component-dimensions mono">17 × 16 × 20 cm</p>
+            </div>
+          </article>
+        </div>
+        <p class="engineering-credit">
+          Designed and built as a team thesis. The drawings document the
+          hardware design; the photograph above shows the constructed prototype.
         </p>
       </section>
       <aside class="related-project section-pad">
         <p class="eyebrow">THE OTHER HALF OF THE THESIS</p>
-        <a href="./aquadetect.html"
-          ><span>AQUADETECT</span><span aria-hidden="true">↗</span></a
-        >
+        <a href="/projects/aquadetect"
+          ><span>AQUADETECT</span
+          ><span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
         <p>
           Explore the interface that brings detection and monitoring together.
         </p>
@@ -202,8 +651,38 @@
       <div class="footer-actions">
         <button id="motion-toggle" aria-pressed="false" hidden>
           Reduce motion</button
-        ><a href="https://github.com/PATOTSTI/portfolio">View source ↗</a
-        ><a href="#top" aria-label="Back to top">↑</a>
+        ><a href="https://github.com/PATOTSTI/portfolio"
+          >View source
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="#top" aria-label="Back to top"
+          ><svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 20V4m-7 7 7-7 7 7" /></svg
+        ></a>
       </div>
     </footer>
     <dialog
@@ -218,10 +697,24 @@
             Zoom in</button
           ><a
             data-viewer-original
-            href="./assets/images/projects/dashboard.webp"
+            href="../assets/images/projects/hydrobot-1600.webp"
             target="_blank"
             rel="noopener noreferrer"
-            >Open image ↗</a
+            >Open image
+            <svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></a
           ><button
             type="button"
             data-viewer-close

@@ -2,6 +2,38 @@
 
 ## Document control
 
+### Updated personal story — October 23, 2026
+
+Vincent's latest first-person account supersedes the earlier Iron Man origin story. His interest began in his family's computer café in their barangay, playing games with friends and discovering computers. After the café closed, a high-school need for a PC led him to YouTube tutorials, building his own computer, saving for gaming upgrades, and troubleshooting hardware and software himself. Computer Engineering then broadened his interests into programming, embedded systems, microprocessors, and AI/machine learning. Present his graduation with gratitude and an eagerness to keep learning. Use the About heading “It started at the café” and concise, personal paragraphs; do not restore the superseded origin story.
+
+### Latest internship presentation decision
+
+Vincent requested removal of the three internship screenshots. Remove their captions, viewer markup, page-specific gallery script, and exported public image files. Keep the three case studies and simplified workflow diagrams. Original files in `Media/Internship/` remain unchanged. This decision supersedes earlier screenshot-selection instructions below.
+
+### Approved internship screenshot selection — October 15, 2026
+
+This follow-up supersedes the blanket screenshot exclusion in the initial internship revision. Review of all 41 original images supports three selections: the ATM automated-test result, the daily-reporting empty date prompt, and the MT940 generic module structure. Place one accurately captioned screenshot in each corresponding case study with shared image-viewer zoom, keyboard navigation, focus return, and no-JavaScript direct-image fallback.
+
+Preserve original pixels through lossless WebP export. Personal local development folder names remain visible in the two terminal images; no observed customer/account records, financial amounts, credentials, or email recipients appear in the selected images. Do not publish other screenshots, source PDFs, actual reports, or configuration views. Describe the five passing tests as a captured development run, not a new verification or performance claim. Keep workflow illustrations and all existing project explanations.
+
+### Approved internship expansion — October 15, 2026
+
+- Use the user's three internship documents as private source material for a new `/experience/aub` page, built from root source `aub-internship.html` into `dist/experience/aub.html`.
+- Present three concise case studies: ATM log reporting (JRN/NCR normalization, Excel/CSV, SQLite, traceability and file-hash duplicate protection); daily transaction reporting (VB6-to-Python migration, modular database/report logic, summaries and overwrite checks); MT940 statement generation (legacy migration, statement files, repeat-run checks, configured delivery handling).
+- Explain the task, personal contribution, implementation decisions, and functional result. No unsupported production claims, internship dates, throughput, savings, percentages, or successful email-delivery claims.
+- Summarize documentation work: prerequisites, setup, program flow, output verification, and troubleshooting. Credit the internship at Asia United Bank Corporation and supervisor coordination already supplied by the user.
+- Replace generic homepage internship bullets with the three documented tools, linked to their case-study anchors. Keep the existing three academic project cards and count unchanged.
+- Use simplified semantic HTML workflow diagrams in the established palette. Exclude all original banking screenshots and PDFs from public output because they reveal records, internal metadata, and email-related information. Do not create fake application screenshots or expose internal business rules.
+- Verify the clean URL, deep links, mobile navigation, reduced motion, no-JavaScript readability, accessibility, and build/source-document separation.
+
+### Approved hardware documentation and URL revision — October 15, 2026
+
+- Expand Hydrobot with the supplied complete 3D layout, circuit diagram, and five component drawings: twin hulls, electronics enclosure, filtration chamber, solar mount, and oil collection mouth. Preserve original resolution and diagram details in lossless WebP assets.
+- Summarize the supplied context into an assembly overview, three circuit explanations (sensing, power, actuation), and five concise component descriptions. Label dimensions length × width × height. Keep team credit and distinguish design drawings from the constructed prototype photograph.
+- Extend the image viewer so each drawing opens at the correct position within eight Hydrobot images, with enlargement, keyboard navigation, and reduced-motion support. No generative modification to engineering evidence.
+- Public pages: `/`, `/projects/hydrobot`, `/projects/aquadetect`, `/projects/ephor`. Source HTML files remain in the root; the build packages case studies into `dist/projects/`. Vercel `cleanUrls` removes extensions, and permanent redirects preserve previous flat URLs. Update internal links, relative asset references, and canonical URLs together.
+- Preview through `node scripts/prepare-deploy.mjs` followed by `node scripts/preview.mjs`; direct file opening no longer represents nested public routing.
+
 ### Approved project presentation revision — October 14, 2026
 
 This revision supersedes the earlier stats-strip and combined-project presentation requirements below.
@@ -907,3 +939,7 @@ The video production prompts and requirements in the original planning material 
 - Résumé PDF remains unsupplied; no fake résumé link is shown.
 - Static Vercel output uses dist/ with a dependency-free Node copy script (scripts/prepare-deploy.mjs) to include only public HTML, CSS, JS, and assets. This supersedes the earlier root-output configuration example. No framework or application runtime is used.
 - Browser checks completed at five widths with no overflow, page errors, or axe A/AA violations in the tested states.
+
+## Resume link revision - October 23, 2026
+
+Supersedes earlier missing-resume notes and the full-page section. The supplied PDF is `assets/documents/SANCHEZ_RESUME.pdf`. Navigation and contact links open it in a new tab, with `target="_blank"`, `rel="noopener noreferrer"`, and accessible labels identifying new-tab behavior. No dedicated section or embedded viewer. Keep the document unchanged; replace the same file and rebuild to update it.

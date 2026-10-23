@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#171519" />
+    <title>AUB Internship | Vincent Sanchez</title>
+    <meta
+      name="description"
+      content="Vincent Sanchez’s IT internship at Asia United Bank: Python reporting tools, VB6 migrations, statement generation, and technical documentation."
+    />
+    <link
+      rel="canonical"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/experience/aub"
+    />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
+    ></script>
+    <script defer src="../script.js"></script>
+  </head>
+  <body id="top" class="project-page internship-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Vincent Sanchez, portfolio home"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        hidden
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/#work">All projects <span>↖</span></a
+        ><a href="/#about">My story</a
+        ><a class="nav-contact" href="/#contact"
+          >Let's connect
+          <span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="case-hero internship-hero section-pad">
+        <a class="back-link mono" href="/#experience">← BACK TO EXPERIENCE</a>
+        <div class="case-heading">
+          <div>
+            <p class="eyebrow">ASIA UNITED BANK CORPORATION / IT INTERNSHIP</p>
+            <h1>PYTHON IN<br /><span class="pink-text">PRACTICE.</span></h1>
+          </div>
+          <p>
+            Reporting tools.<br />Legacy migrations.<br />Documentation people
+            can use.
+          </p>
+        </div>
+        <p class="internship-intro">
+          During my IT internship, I worked on Python tools for transaction
+          reporting and statement generation—preserving existing logic, making
+          records easier to trace, and documenting how each system works.
+        </p>
+        <div class="case-tags mono">
+          <span>PYTHON DEVELOPMENT</span><span>REPORT AUTOMATION</span
+          ><span>TECHNICAL DOCUMENTATION</span>
+        </div>
+        <nav class="intern-project-nav" aria-label="Internship projects">
+          <a href="#atm-reporting"
+            ><span class="mono">01</span><span>ATM log reporting</span
+            ><span aria-hidden="true"
+              ><svg
+                class="icon-arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="m5 5 14 14M5 19h14V5" /></svg></span></a
+          ><a href="#daily-reporting"
+            ><span class="mono">02</span><span>Daily transaction reporting</span
+            ><span aria-hidden="true"
+              ><svg
+                class="icon-arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="m5 5 14 14M5 19h14V5" /></svg></span></a
+          ><a href="#statement-generation"
+            ><span class="mono">03</span><span>MT940 statement generation</span
+            ><span aria-hidden="true"
+              ><svg
+                class="icon-arrow"
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="m5 5 14 14M5 19h14V5" /></svg></span
+          ></a>
+        </nav>
+      </section>
+      <section
+        class="intern-studies section-paper section-pad"
+        aria-label="Internship case studies"
+      >
+        <article
+          class="intern-study"
+          id="atm-reporting"
+          aria-labelledby="atm-reporting-title"
+        >
+          <div class="intern-study-heading">
+            <p class="eyebrow">01 / DATA PROCESSING & REPORT AUTOMATION</p>
+            <h2 id="atm-reporting-title" data-reveal>ATM log reporting</h2>
+            <p>Different log formats. One consistent report.</p>
+          </div>
+          <figure class="intern-flow">
+            <figcaption class="mono">SIMPLIFIED WORKFLOW</figcaption>
+            <ol>
+              <li>
+                <span class="mono">01</span><strong>Read</strong
+                ><span>JRN + NCR logs</span>
+              </li>
+              <li>
+                <span class="mono">02</span><strong>Normalize</strong
+                ><span>Transactions + events</span>
+              </li>
+              <li>
+                <span class="mono">03</span><strong>Export</strong
+                ><span>Reports + history</span>
+              </li>
+            </ol>
+          </figure>
+          <div class="intern-story">
+            <div>
+              <h3>The task</h3>
+              <p>
+                ATM journals from different sources use different formats.
+                Reviewing them is easier when transaction and event records
+                share a consistent structure.
+              </p>
+            </div>
+            <div>
+              <h3>My contribution</h3>
+              <p>
+                Built a Python tool that parses JRN and NCR logs, normalizes
+                their records, and produces Excel and CSV reports alongside a
+                searchable SQLite history.
+              </p>
+            </div>
+          </div>
+          <div class="intern-decisions">
+            <div>
+              <h3>Consistent output</h3>
+              <p>
+                Separated transactions, events, and summaries into clear report
+                views.
+              </p>
+            </div>
+            <div>
+              <h3>Traceable records</h3>
+              <p>
+                Kept source-file references with processed records to support
+                review and troubleshooting.
+              </p>
+            </div>
+            <div>
+              <h3>Repeat-run handling</h3>
+              <p>
+                Used file hashes to avoid inserting an already processed file
+                into the database again.
+              </p>
+            </div>
+          </div>
+          <div class="intern-result">
+            <p class="eyebrow">WHAT THE TOOL PROVIDES</p>
+            <p>
+              A repeatable path from raw logs to reports and stored records,
+              with options for report-only, database-only, or combined output.
+            </p>
+          </div>
+          <div class="tech-list">
+            <span>Python</span><span>SQLite</span><span>openpyxl</span
+            ><span>Excel / CSV</span>
+          </div>
+        </article>
+        <article
+          class="intern-study"
+          id="daily-reporting"
+          aria-labelledby="daily-reporting-title"
+        >
+          <div class="intern-study-heading">
+            <p class="eyebrow">02 / VB6 → PYTHON MIGRATION</p>
+            <h2 id="daily-reporting-title" data-reveal>
+              Daily transaction reporting
+            </h2>
+            <p>Preserve the rules. Improve the structure.</p>
+          </div>
+          <figure class="intern-flow">
+            <figcaption class="mono">SIMPLIFIED WORKFLOW</figcaption>
+            <ol>
+              <li>
+                <span class="mono">01</span><strong>Select</strong
+                ><span>Reporting date</span>
+              </li>
+              <li>
+                <span class="mono">02</span><strong>Process</strong
+                ><span>Retrieve + summarize</span>
+              </li>
+              <li>
+                <span class="mono">03</span><strong>Export</strong
+                ><span>Excel + CSV</span>
+              </li>
+            </ol>
+          </figure>
+          <div class="intern-story">
+            <div>
+              <h3>The task</h3>
+              <p>
+                An existing VB6 reporting workflow needed a Python
+                implementation that retained its established report logic and
+                outputs.
+              </p>
+            </div>
+            <div>
+              <h3>My contribution</h3>
+              <p>
+                Converted the workflow into a modular Python application,
+                separating database access, report coordination, and file
+                export. The program retrieves records for a selected reporting
+                date and generates formatted Excel and CSV outputs.
+              </p>
+            </div>
+          </div>
+          <div class="intern-decisions">
+            <div>
+              <h3>Legacy behavior</h3>
+              <p>
+                Preserved the established reporting logic while reorganizing the
+                implementation into focused modules.
+              </p>
+            </div>
+            <div>
+              <h3>Readable reports</h3>
+              <p>
+                Generated formatted reports with debit, credit, and transaction
+                summaries.
+              </p>
+            </div>
+            <div>
+              <h3>Output protection</h3>
+              <p>
+                Added a check for an existing report to avoid overwriting
+                previously generated output.
+              </p>
+            </div>
+          </div>
+          <div class="intern-result">
+            <p class="eyebrow">WHAT THE TOOL PROVIDES</p>
+            <p>
+              A Python reporting workflow that retains the legacy behavior and
+              makes its processing stages easier to follow and maintain.
+            </p>
+          </div>
+          <div class="tech-list">
+            <span>Python</span><span>VB6 migration</span
+            ><span>SQLite / SQL</span><span>xlwt</span><span>Excel / CSV</span>
+          </div>
+        </article>
+        <article
+          class="intern-study"
+          id="statement-generation"
+          aria-labelledby="statement-generation-title"
+        >
+          <div class="intern-study-heading">
+            <p class="eyebrow">03 / VB6 → PYTHON MIGRATION</p>
+            <h2 id="statement-generation-title" data-reveal>
+              MT940 statement generation
+            </h2>
+            <p>From transaction records to statement files.</p>
+          </div>
+          <figure class="intern-flow">
+            <figcaption class="mono">SIMPLIFIED WORKFLOW</figcaption>
+            <ol>
+              <li>
+                <span class="mono">01</span><strong>Read</strong
+                ><span>Dated transaction records</span>
+              </li>
+              <li>
+                <span class="mono">02</span><strong>Generate</strong
+                ><span>MT940 statements</span>
+              </li>
+              <li>
+                <span class="mono">03</span><strong>Handle</strong
+                ><span>Files + configured delivery</span>
+              </li>
+            </ol>
+          </figure>
+          <div class="intern-story">
+            <div>
+              <h3>The task</h3>
+              <p>
+                A legacy statement-generation workflow combined record
+                retrieval, account processing, file formatting, and delivery
+                handling.
+              </p>
+            </div>
+            <div>
+              <h3>My contribution</h3>
+              <p>
+                Migrated the workflow from VB6 to Python, retaining its existing
+                behavior while separating database access, statement generation,
+                and email-delivery handling into dedicated modules.
+              </p>
+            </div>
+          </div>
+          <div class="intern-decisions">
+            <div>
+              <h3>Structured statements</h3>
+              <p>
+                Generated MT940 text statements from the records for a selected
+                processing date.
+              </p>
+            </div>
+            <div>
+              <h3>Duplicate safeguards</h3>
+              <p>
+                Checked processing status and existing output before repeating
+                work.
+              </p>
+            </div>
+            <div>
+              <h3>Operational clarity</h3>
+              <p>
+                Added progress messages and documented the setup, execution
+                flow, and troubleshooting steps.
+              </p>
+            </div>
+          </div>
+          <div class="intern-result">
+            <p class="eyebrow">WHAT THE TOOL PROVIDES</p>
+            <p>
+              A modular statement-generation tool with repeat-run safeguards and
+              documented operation. Email delivery remains dependent on the
+              configured mail service.
+            </p>
+          </div>
+          <div class="tech-list">
+            <span>Python</span><span>VB6 migration</span><span>SQLite</span
+            ><span>MT940</span><span>SMTP integration</span>
+          </div>
+        </article>
+      </section>
+      <section
+        class="intern-handover section-pad"
+        aria-labelledby="handover-title"
+      >
+        <div class="section-label mono">
+          <span>BEYOND THE CODE</span><span>DOCUMENTATION &amp; HANDOVER</span>
+        </div>
+        <div class="engineering-intro">
+          <h2 id="handover-title" data-reveal>
+            MAKE IT WORK.<br /><span class="pink-text">MAKE IT CLEAR.</span>
+          </h2>
+          <p>
+            I wrote a guide for each tool, covering the program flow, setup,
+            outputs, and troubleshooting. Coordinating requirements and
+            revisions with supervisors helped me turn implementation details
+            into instructions others could follow.
+          </p>
+        </div>
+        <div class="circuit-notes">
+          <article>
+            <p class="eyebrow">SETUP</p>
+            <h3>A clear starting point.</h3>
+            <p>
+              Prerequisites, dependencies, and step-by-step instructions for
+              getting each tool ready to run.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">OPERATION</p>
+            <h3>Explain the workflow.</h3>
+            <p>
+              Processing stages, report outputs, and checks for confirming that
+              a run produced the expected files.
+            </p>
+          </article>
+          <article>
+            <p class="eyebrow">TROUBLESHOOTING</p>
+            <h3>Support the next person.</h3>
+            <p>
+              Guidance for common input, file-access, dependency, and
+              repeat-processing issues.
+            </p>
+          </article>
+        </div>
+        <p class="intern-public-note">
+          These case studies describe my work at a high level. Workflow
+          illustrations are simplified; customer records and the full documents
+          are not displayed.
+        </p>
+      </section>
+      <aside class="related-project section-pad">
+        <p class="eyebrow">LET'S TALK ABOUT THE WORK</p>
+        <a href="mailto:biceentandreei@gmail.com"
+          ><span>GET IN TOUCH</span
+          ><span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
+        <p>
+          Interested in my experience with Python, automation, or technical
+          documentation? I'd be happy to talk.
+        </p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top"
+        >VINCENT<span class="wordmark-dot">.</span
+        ><span class="wordmark-surname">SANCHEZ</span></a
+      >
+      <p>© <span id="year">2026</span> Vincent Sanchez</p>
+      <div class="footer-actions">
+        <button id="motion-toggle" aria-pressed="false" hidden>
+          Reduce motion</button
+        ><a href="https://github.com/PATOTSTI/portfolio"
+          >View source
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="#top" aria-label="Back to top"
+          ><svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 20V4m-7 7 7-7 7 7" /></svg
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

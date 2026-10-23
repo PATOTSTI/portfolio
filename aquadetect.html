@@ -11,14 +11,14 @@
     />
     <link
       rel="canonical"
-      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/aquadetect.html"
+      href="https://portfolio-omega-jet-b6e9njfqyv.vercel.app/projects/aquadetect"
     />
-    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.css"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
@@ -31,16 +31,13 @@
       defer
       src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"
     ></script>
-    <script defer src="./script.js"></script>
-    <script defer src="./assets/project-gallery.js"></script>
+    <script defer src="../script.js"></script>
+    <script defer src="../assets/project-gallery.js"></script>
   </head>
   <body id="top" class="project-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-      <a
-        class="wordmark"
-        href="./index.html"
-        aria-label="Vincent Sanchez, portfolio home"
+      <a class="wordmark" href="/" aria-label="Vincent Sanchez, portfolio home"
         >VINCENT<span class="wordmark-dot">.</span
         ><span class="wordmark-surname">SANCHEZ</span></a
       ><button
@@ -52,18 +49,31 @@
         Menu <span aria-hidden="true">+</span>
       </button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="./index.html#work">All projects <span>↖</span></a
-        ><a href="./index.html#about">My story</a
-        ><a class="nav-contact" href="./index.html#contact"
-          >Let's connect <span aria-hidden="true">↗</span></a
-        >
+        <a href="/#work">All projects <span>↖</span></a
+        ><a href="/#about">My story</a
+        ><a class="nav-contact" href="/#contact"
+          >Let's connect
+          <span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
       </nav>
     </header>
     <main id="main">
       <section class="case-hero section-pad">
-        <a class="back-link mono" href="./index.html#work"
-          >← BACK TO PROJECTS</a
-        >
+        <a class="back-link mono" href="/#work">← BACK TO PROJECTS</a>
         <div class="case-heading">
           <div>
             <p class="eyebrow">02 / THE SOFTWARE · TEAM THESIS</p>
@@ -83,22 +93,36 @@
           <figure class="gallery-main">
             <a
               class="gallery-image-link"
-              href="./assets/images/projects/dashboard.webp"
+              href="../assets/images/projects/dashboard.webp"
               data-lightbox="aquadetect"
               data-title="Dashboard overview"
               data-caption="Battery, oil-sensor, pump, location, and navigation information in one overview."
               aria-label="Enlarge the selected AquaDetect screenshot"
               ><img
                 id="gallery-image"
-                src="./assets/images/projects/dashboard.webp"
+                src="../assets/images/projects/dashboard.webp"
                 width="1910"
                 height="946"
                 fetchpriority="high"
-                alt="AquaDetect dashboard overview with status panels, location map, and navigation information."
-              /><span class="enlarge-label" aria-hidden="true"
-                >ENLARGE SCREENSHOT ↗</span
-              ></a
-            >
+                alt="AquaDetect dashboard overview with status panels, location map, and navigation information." /><span
+                class="enlarge-label"
+                aria-hidden="true"
+                >ENLARGE SCREENSHOT
+                <svg
+                  class="icon-arrow"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span
+            ></a>
             <figcaption class="gallery-caption">
               <div aria-live="polite" aria-atomic="true">
                 <h2 id="gallery-title">Dashboard overview</h2>
@@ -116,14 +140,14 @@
           >
             <a
               class="gallery-choice"
-              href="./assets/images/projects/dashboard.webp"
+              href="../assets/images/projects/dashboard.webp"
               data-gallery-item
               data-title="Dashboard overview"
               data-caption="Battery, oil-sensor, pump, location, and navigation information in one overview."
-              data-preview="./assets/images/projects/dashboard.webp"
+              data-preview="../assets/images/projects/dashboard.webp"
               aria-current="true"
               ><img
-                src="./assets/images/projects/dashboard-preview.webp"
+                src="../assets/images/projects/dashboard-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -132,13 +156,13 @@
               /><span><b class="mono">01</b>Dashboard overview</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/navigation.webp"
+              href="../assets/images/projects/navigation.webp"
               data-gallery-item
               data-title="Map & navigation"
               data-caption="A map-based view with the current position, target coordinates, and home-point controls."
-              data-preview="./assets/images/projects/navigation.webp"
+              data-preview="../assets/images/projects/navigation.webp"
               ><img
-                src="./assets/images/projects/navigation-preview.webp"
+                src="../assets/images/projects/navigation-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -147,13 +171,13 @@
               /><span><b class="mono">02</b>Map & navigation</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/detection-results.webp"
+              href="../assets/images/projects/detection-results.webp"
               data-gallery-item
               data-title="Detection results"
               data-caption="A supplied test image alongside oil-spill bounding boxes and individual detection confidence scores."
-              data-preview="./assets/images/projects/detection-results.webp"
+              data-preview="../assets/images/projects/detection-results.webp"
               ><img
-                src="./assets/images/projects/detection-results-preview.webp"
+                src="../assets/images/projects/detection-results-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -162,13 +186,13 @@
               /><span><b class="mono">03</b>Detection results</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/manual-control.webp"
+              href="../assets/images/projects/manual-control.webp"
               data-gallery-item
               data-title="Manual control"
               data-caption="Movement, motor speed, rudder angle, device mode, and pump controls in the interface."
-              data-preview="./assets/images/projects/manual-control.webp"
+              data-preview="../assets/images/projects/manual-control.webp"
               ><img
-                src="./assets/images/projects/manual-control-preview.webp"
+                src="../assets/images/projects/manual-control-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -177,13 +201,13 @@
               /><span><b class="mono">04</b>Manual control</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/batch-screening.webp"
+              href="../assets/images/projects/batch-screening.webp"
               data-gallery-item
               data-title="Batch screening"
               data-caption="The image-import screen for reviewing multiple images in an oil-detection workflow."
-              data-preview="./assets/images/projects/batch-screening.webp"
+              data-preview="../assets/images/projects/batch-screening.webp"
               ><img
-                src="./assets/images/projects/batch-screening-preview.webp"
+                src="../assets/images/projects/batch-screening-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -192,13 +216,13 @@
               /><span><b class="mono">05</b>Batch screening</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/oil-detection.webp"
+              href="../assets/images/projects/oil-detection.webp"
               data-gallery-item
               data-title="Image analysis"
               data-caption="Image upload and location metadata fields before running oil-spill detection."
-              data-preview="./assets/images/projects/oil-detection.webp"
+              data-preview="../assets/images/projects/oil-detection.webp"
               ><img
-                src="./assets/images/projects/oil-detection-preview.webp"
+                src="../assets/images/projects/oil-detection-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -207,13 +231,13 @@
               /><span><b class="mono">06</b>Image analysis</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/cleaning.webp"
+              href="../assets/images/projects/cleaning.webp"
               data-gallery-item
               data-title="Cleaning patterns"
               data-caption="Cleaning-center coordinates, pattern parameters, status, and a map preview."
-              data-preview="./assets/images/projects/cleaning.webp"
+              data-preview="../assets/images/projects/cleaning.webp"
               ><img
-                src="./assets/images/projects/cleaning-preview.webp"
+                src="../assets/images/projects/cleaning-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -222,13 +246,13 @@
               /><span><b class="mono">07</b>Cleaning patterns</span></a
             ><a
               class="gallery-choice"
-              href="./assets/images/projects/logs.webp"
+              href="../assets/images/projects/logs.webp"
               data-gallery-item
               data-title="Activity logs"
               data-caption="Command history and filtering controls for reviewing system activity."
-              data-preview="./assets/images/projects/logs.webp"
+              data-preview="../assets/images/projects/logs.webp"
               ><img
-                src="./assets/images/projects/logs-preview.webp"
+                src="../assets/images/projects/logs-preview.webp"
                 alt=""
                 width="800"
                 height="400"
@@ -322,9 +346,24 @@
       </section>
       <aside class="related-project section-pad">
         <p class="eyebrow">THE OTHER HALF OF THE THESIS</p>
-        <a href="./hydrobot.html"
-          ><span>HYDROBOT</span><span aria-hidden="true">↗</span></a
-        >
+        <a href="/projects/hydrobot"
+          ><span>HYDROBOT</span
+          ><span aria-hidden="true"
+            ><svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
         <p>Meet the physical prototype behind the interface.</p>
       </aside>
     </main>
@@ -337,8 +376,38 @@
       <div class="footer-actions">
         <button id="motion-toggle" aria-pressed="false" hidden>
           Reduce motion</button
-        ><a href="https://github.com/PATOTSTI/portfolio">View source ↗</a
-        ><a href="#top" aria-label="Back to top">↑</a>
+        ><a href="https://github.com/PATOTSTI/portfolio"
+          >View source
+          <svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M5 19 19 5M5 5h14v14" /></svg></a
+        ><a href="#top" aria-label="Back to top"
+          ><svg
+            class="icon-arrow"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M12 20V4m-7 7 7-7 7 7" /></svg
+        ></a>
       </div>
     </footer>
     <dialog
@@ -353,10 +422,24 @@
             Zoom in</button
           ><a
             data-viewer-original
-            href="./assets/images/projects/dashboard.webp"
+            href="../assets/images/projects/dashboard.webp"
             target="_blank"
             rel="noopener noreferrer"
-            >Open image ↗</a
+            >Open image
+            <svg
+              class="icon-arrow"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M5 19 19 5M5 5h14v14" /></svg></a
           ><button
             type="button"
             data-viewer-close

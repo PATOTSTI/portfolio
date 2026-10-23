@@ -82,12 +82,13 @@
     dialog.querySelector("[data-viewer-prev]").hidden = entries.length < 2;
     dialog.querySelector("[data-viewer-next]").hidden = entries.length < 2;
   }
-  heroLinks.forEach((link) =>
+  heroLinks.forEach((link, index) =>
     link.addEventListener("click", (event) => {
       if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey)
         return;
       event.preventDefault();
       opener = link;
+      if (!choices.length) selected = index;
       renderViewer();
       dialog.showModal();
       document.documentElement.classList.add("image-viewer-open");

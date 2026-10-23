@@ -8,9 +8,69 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/hydrobot.html",
+      "destination": "/projects/hydrobot",
+      "permanent": true
+    },
+    {
+      "source": "/hydrobot",
+      "destination": "/projects/hydrobot",
+      "permanent": true
+    },
+    {
+      "source": "/aquadetect.html",
+      "destination": "/projects/aquadetect",
+      "permanent": true
+    },
+    {
+      "source": "/aquadetect",
+      "destination": "/projects/aquadetect",
+      "permanent": true
+    },
+    {
+      "source": "/ephor.html",
+      "destination": "/projects/ephor",
+      "permanent": true
+    },
+    {
+      "source": "/ephor",
+      "destination": "/projects/ephor",
+      "permanent": true
+    },
+    {
+      "source": "/aub-internship.html",
+      "destination": "/experience/aub",
+      "permanent": true
+    },
+    {
+      "source": "/aub-internship",
+      "destination": "/experience/aub",
+      "permanent": true
     }
   ]
 }
